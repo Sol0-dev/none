@@ -1,0 +1,52 @@
+{
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+
+  "mcpServers": {
+    "burp": {
+      "command": "/usr/bin/java",
+      "args": [
+        "-jar",
+        "/none/mcp-proxy.jar",
+        "--sse-url",
+        "http://127.0.0.1:9876/"
+      ],
+      "timeout": 30000,
+      "trust": true
+    },
+
+    "kali-mcp": {
+      "command": "mcp-server",
+      "args": [
+        "--server",
+        "http://127.0.0.1:9999/"
+      ],
+      "timeout": 30000,
+      "trust": true
+    }
+  },
+
+  "sandbox": false,
+  "checkpointing": true,
+
+  "coreTools": [
+    "run_shell_command",
+    "read_file",
+    "write_file",
+    "edit_file",
+    "list_directory",
+    "search_file_content",
+    "glob",
+    "web_fetch"
+  ],
+
+  "autoAccept": false,
+  "usageStatisticsEnabled": true,
+
+  "contextFileName": "GEMINI.md",
+
+  "fileFiltering": {
+    "respectGitIgnore": true,
+    "enableRecursiveFileSearch": true
+  }
+}
