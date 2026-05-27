@@ -224,8 +224,8 @@ G --> D
 ```text
 none/
 │
+├── GEMINI.md
 ├── .gemini/
-│   ├── GEMINI.md
 │   └── settings.json
 │
 ├── agents/
