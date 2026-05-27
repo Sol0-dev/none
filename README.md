@@ -784,13 +784,6 @@ This framework is intended for:
 - Adversary Emulation
 - Defensive Validation
 
-Operators are responsible for ensuring all activity complies with:
-
-- authorization boundaries
-- local law
-- organizational policy
-- responsible disclosure practices
-
 ---
 
 <div align="center">
