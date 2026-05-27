@@ -406,19 +406,7 @@ PoC verification
 Install Kali MCP:
 
 ```bash
-npm install -g mcp-server
-```
-
-Start server:
-
-```bash
-mcp-server --server http://127.0.0.1:9999/
-```
-
-Verify:
-
-```bash
-curl http://127.0.0.1:9999/
+https://medium.com/@mauricio.antonio/how-to-set-up-your-personal-pentesting-and-bug-hunting-assistant-40d2742afb87
 ```
 
 Your Gemini agent can now access:
