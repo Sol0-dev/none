@@ -313,7 +313,7 @@ Kali MCP integration
 Install:
 
 ```text
-Burp Suite Professional
+https://github.com/xiv3r/Burpsuite-Professional
 ```
 
 Launch Burp.
@@ -344,14 +344,10 @@ After installation, locate the installed extension.
 
 Extract the extension:
 
-```bash
-unzip burp-mcp.jar -d burp-mcp
-```
-
 Move:
 
 ```bash
-mv burp-mcp/mcp-proxy.jar ~/none/
+mv ~/mcp-proxy.jar ~/none/
 ```
 
 Expected structure:
