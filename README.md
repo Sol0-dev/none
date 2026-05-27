@@ -772,30 +772,6 @@ Generate PoC
 Document impact
 Persist session
 ```
-
----
-
-# Recommended `.gitignore`
-
-Create:
-
-```text
-.gitignore
-```
-
-Add:
-
-```gitignore
-agents/none/session.json
-agents/none/findings/
-agents/none/fullrecon/
-*.har
-*.sqlite
-*.db
-*.log
-*.tmp
-```
-
 ---
 
 # Security Research Notice
