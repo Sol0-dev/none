@@ -1,321 +1,197 @@
 <div align="center">
 
-# none
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=34&duration=3500&pause=1000&color=8B0000&center=true&vCenter=true&width=900&lines=none;Adaptive+Autonomous+Security+Research+Agent;Signal+Driven+%E2%80%A2+Validation+First;Offensive+Research+%E2%80%A2+Persistent+Memory" />
 
-**Adaptive Autonomous Security Research Agent**
+<br/>
 
-Signal-driven offensive research · validated exploitability · persistent operational memory
+<p align="center">
+  <img src="https://img.shields.io/badge/Mode-Offensive%20Research-111111?style=for-the-badge&logo=ghost&logoColor=white" />
+  <img src="https://img.shields.io/badge/Validation-Real%20PoC-3b0d0d?style=for-the-badge&logo=hackthebox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Focus-High%20Impact%20Only-161616?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Sol0-dev/none?style=flat-square&color=8b0000">
+  <img src="https://img.shields.io/github/license/Sol0-dev/none?style=flat-square">
+  <img src="https://img.shields.io/github/last-commit/Sol0-dev/none?style=flat-square&color=1f1f1f">
+</p>
 
 <br>
 
-![Runtime](https://img.shields.io/badge/runtime-gemini_cli-0f0f0f?style=flat-square)
-![Mode](https://img.shields.io/badge/mode-offensive_research-171717?style=flat-square)
-![Focus](https://img.shields.io/badge/focus-validated_poc-3b0d0d?style=flat-square)
-![Priority](https://img.shields.io/badge/priority-high_impact_only-111111?style=flat-square)
-![Status](https://img.shields.io/badge/status-active-1c1c1c?style=flat-square)
+### **Adaptive Autonomous Offensive Security Framework**
+
+*Signal-driven reconnaissance, adaptive exploitation, validated proof-of-concept generation, and persistent operational memory.*
 
 </div>
 
 ---
 
-## Overview
+```text
+██████████████████████████████████████████████████████████
 
-`none` is an adaptive autonomous offensive security research framework designed to identify, validate, and chain **high-impact vulnerabilities**.
+   TARGET → RECON → ANALYZE → EXPLOIT → VALIDATE → LEARN
 
-The system prioritizes **real exploitability**, **environmental adaptation**, and **validated proof-of-concept execution** over speculative findings.
+██████████████████████████████████████████████████████████
+```
 
-Rather than blindly firing payloads, `none` performs:
+## Mission
 
-- Stack fingerprinting
-- Surface mapping
-- Pattern recognition
-- Exploitation adaptation
-- Session persistence
-- Signal-based prioritization
+`none` is designed for one objective:
 
-The objective is not theoretical coverage.
+> **Find vulnerabilities that actually matter.**
 
-The objective is **real impact**.
+The framework prioritizes **validated exploitability** over speculative findings.
+
+Instead of blindly throwing payloads, `none` adapts to the environment through:
+
+```text
+▸ Stack Fingerprinting
+▸ Surface Mapping
+▸ Behavioral Analysis
+▸ Exploit Adaptation
+▸ Session Persistence
+▸ Vulnerability Chaining
+```
 
 ---
 
-## Design Philosophy
+## Operator Model
 
-The framework operates under several core assumptions:
+<div align="center">
+
+```mermaid
+flowchart LR
+
+A[Target Surface] --> B[Recon Pipeline]
+B --> C[Stack Fingerprinting]
+C --> D[Pattern Recognition]
+D --> E[Adaptive Exploitation]
+E --> F[PoC Validation]
+F --> G[Persistent Memory]
+G --> D
+```
+
+</div>
+
+---
+
+## Core Philosophy
+
+<table>
+<tr>
+<td width="50%">
 
 ### Signal > Noise
 
-Payloads are adapted to observed behavior.
+Environment-aware testing.
 
-Response deltas, stack indicators, timing anomalies, framework fingerprints, and infrastructure signals are analyzed before exploitation begins.
+Payloads are chosen from observed behavior, response anomalies, and stack fingerprints.
+
+</td>
+<td width="50%">
 
 ### Validation > Theory
 
-A finding only exists when a working proof-of-concept exists.
+No speculative findings.
 
-No speculative reporting.
+A vulnerability exists only when impact is verified.
 
-No assumption-driven exploitation.
+</td>
+</tr>
 
-### Pattern Recognition First
+<tr>
+<td width="50%">
 
-Every target behaves differently.
+### Pattern Recognition
 
-`none` fingerprints frameworks, routing behavior, response structures, authentication models, and middleware before selecting attack paths.
+Frameworks, auth models, middleware, and infrastructure influence attack paths.
 
-### Chain Findings Upward
+</td>
+<td width="50%">
 
-Low severity observations are treated as escalation paths.
+### Chain Upward
 
-Information disclosure → SSRF  
-Weak authorization → IDOR chain  
-Misconfiguration → account compromise
+Small weaknesses become high-impact exploit chains.
+
+`Info Leak → SSRF → Internal Access`
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Architecture
+## Capability Matrix
+
+| Module | Capability |
+|:---|:---|
+| **Recon** | Subdomains, JS crawling, endpoint discovery |
+| **Fingerprinting** | Frameworks, runtime behavior, cloud infra |
+| **Exploitation** | XSS, SSRF, IDOR, SSTI, SQLi, JWT |
+| **Automation** | Burp MCP, Kali MCP, shell tooling |
+| **Persistence** | Session restore + operational memory |
+| **Validation** | Real proof-of-concept verification |
+
+---
+
+## Attack Surface Workflow
 
 ```text
-                           ┌──────────────────────┐
-                           │    Target Surface    │
-                           └──────────┬───────────┘
-                                      │
-                              Recon Pipeline
-                                      │
-        ┌─────────────────────────────┼─────────────────────────────┐
-        │                             │                             │
-        ▼                             ▼                             ▼
-┌────────────────┐         ┌────────────────┐         ┌────────────────┐
-│ Stack Analysis │         │ Surface Mapping│         │ Burp History   │
-│ Framework ID   │         │ Endpoint Graph │         │ Request Replay │
-└────────┬───────┘         └────────┬───────┘         └────────┬───────┘
-         └──────────────────────────┴──────────────────────────┘
-                                      │
-                                      ▼
-                         ┌────────────────────────┐
-                         │ Pattern Recognition    │
-                         │ Target Adaptation      │
-                         └────────────┬───────────┘
-                                      │
-                                      ▼
-                         ┌────────────────────────┐
-                         │ Exploitation Engine    │
-                         │ Context-Aware Testing  │
-                         └────────────┬───────────┘
-                                      │
-                                      ▼
-                         ┌────────────────────────┐
-                         │ PoC Validation         │
-                         │ Impact Verification    │
-                         └────────────┬───────────┘
-                                      │
-                                      ▼
-                         ┌────────────────────────┐
-                         │ Persistent Memory      │
-                         │ Lessons / Iterations   │
-                         └────────────────────────┘
+                   ┌──────────────────┐
+                   │ Target Surface   │
+                   └────────┬─────────┘
+                            │
+                 Passive / Active Recon
+                            │
+        ┌───────────────────┼──────────────────┐
+        │                   │                  │
+        ▼                   ▼                  ▼
+ Framework ID       Endpoint Mapping      Burp Replay
+        └───────────────────┬──────────────────┘
+                            │
+                  Behavioral Recognition
+                            │
+                    Adaptive Exploitation
+                            │
+                       PoC Validation
+                            │
+                    Chain Escalation
+                            │
+                     Persistent Memory
 ```
 
 ---
 
-## Operational Workflow
+## Supported Classes
 
-```text
-Recon
-   ↓
-Surface Mapping
-   ↓
-Stack Fingerprinting
-   ↓
-Pattern Recognition
-   ↓
-Target-Specific Exploitation
-   ↓
-PoC Validation
-   ↓
-Chain Escalation
-   ↓
-Session Persistence
-```
+<div align="center">
 
-Every phase is stateful.
+`XSS` • `SSRF` • `IDOR/BOLA` • `SQLi` • `SSTI` • `JWT` • `OAuth`
 
-Sessions persist across interruptions and can be resumed without losing:
+`2FA Bypass` • `Race Conditions` • `HTTP Smuggling`
 
-- Recon output
-- Surface maps
-- Stack fingerprints
-- Findings
-- Lessons learned
-- Exploitation state
+`Cache Poisoning` • `GraphQL Abuse` • `Business Logic`
 
----
-
-## Capabilities
-
-### Reconnaissance
-
-Automated background enumeration and attack surface discovery.
-
-| Capability | Description |
-|------------|-------------|
-| Subdomain Discovery | Passive enumeration and expansion |
-| DNS Resolution | A/CNAME resolution and infrastructure mapping |
-| HTTP Fingerprinting | Framework, status, redirects, titles |
-| Historical URL Mining | Wayback + archival collection |
-| JavaScript Crawling | Endpoint discovery |
-| Parameter Extraction | Query and POST parameter harvesting |
-| Secret Discovery | JS secret extraction |
-| Endpoint Enumeration | Surface expansion |
-
----
-
-### Stack Fingerprinting
-
-Before exploitation begins, `none` fingerprints:
-
-```text
-Headers
-Frameworks
-Runtime behavior
-Error signatures
-Authentication models
-Infrastructure layers
-Caching behavior
-Cloud providers
-Reverse proxy chains
-```
-
-Observed signals dynamically alter exploitation priority.
-
-Example:
-
-| Signal | Priority Shift |
-|--------|----------------|
-| Express | Prototype pollution / SSRF |
-| GraphQL | Schema abuse / IDOR |
-| Rails | SSTI / traversal |
-| Spring | Actuator / SSRF |
-| JWT Auth | Token confusion |
-| Cloudflare | Cache poisoning |
-
----
-
-### Vulnerability Classes
-
-`none` supports adaptive testing for:
-
-```text
-XSS
-SSRF
-IDOR / BOLA
-SQL Injection
-SSTI
-XXE
-JWT Exploitation
-OAuth / SSO Abuse
-2FA Bypass
-Access Control Failures
-CORS Misconfiguration
-HTTP Request Smuggling
-Cache Poisoning
-Race Conditions
-GraphQL Abuse
-Business Logic Vulnerabilities
-File Upload Exploitation
-Path Traversal / LFI
-Command Injection
-```
-
-Payload selection is context-aware and signal-driven.
-
----
-
-## Session Persistence
-
-State is continuously maintained.
-
-```json
-{
-  "session_id": "<uuid>",
-  "target": "<domain>",
-  "phase": "recon",
-  "stack_fingerprint": {},
-  "surface_map": {},
-  "tested_classes": [],
-  "findings": [],
-  "chains": [],
-  "lessons": [],
-  "iteration_count": 0
-}
-```
-
-Sessions can be:
-
-```bash
-resume
-pause
-stop
-restore
-continue
-```
-
-Interruptions do not lose operational state.
-
----
-
-## Toolchain
-
-### Recon
-
-```text
-subfinder
-assetfinder
-dnsx
-httpx
-katana
-gau
-waybackurls
-ffuf
-dalfox
-nuclei
-sqlmap
-ghauri
-trufflehog
-interactsh-client
-```
-
-### Integrations
-
-```text
-Burp Suite MCP
-Kali MCP
-Gemini CLI
-Shell execution
-Web fetch
-File persistence
-```
+</div>
 
 ---
 
 ## Quick Start
 
-### Clone Repository
+### Installation
 
 ```bash
 git clone https://github.com/Sol0-dev/none.git
 cd none
+
+npm install -g @google/gemini-cli
 ```
 
-### Install Dependencies
+Install MCP integrations:
 
-```bash
-go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install github.com/projectdiscovery/httpx/cmd/httpx@latest
-go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
-go install github.com/projectdiscovery/katana/cmd/katana@latest
-go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
-```
+- Burp Suite Pro + MCP Extension
+- Kali MCP
+- Tool dependencies
 
 ### Start Session
 
@@ -323,16 +199,17 @@ go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 gemini
 ```
 
-```bash
-find {Bug-type} using curl, burp mcp and other tools hunt to this target.com  
+```text
+find SSRF using curl, burp mcp and other tools hunt to target.com
 ```
 
-Stop the operation and report the findings:
+Stop operation:
+
 ```bash
 stop
 ```
 
-Resume previous operation:
+Resume operation:
 
 ```bash
 resume
@@ -340,98 +217,36 @@ resume
 
 ---
 
-## Example Operation
-
-### Recon Dispatch
-
-```bash
-TARGET="example.com"
-
-subfinder -d $TARGET
-assetfinder --subs-only $TARGET
-httpx -tech-detect
-katana -jc -d 4
-gau $TARGET
-nuclei -severity high,critical
-```
-
-### Stack Fingerprinting
-
-```bash
-curl -si https://$TARGET | grep \
-"server:|x-powered-by:|x-runtime:"
-```
-
-### Adaptive Exploitation
+## Toolchain
 
 ```text
-Signal:
-X-Powered-By: Express
-
-Priority Shift:
-→ Prototype Pollution
-→ SSRF
-→ NoSQL Injection
+subfinder      httpx         nuclei
+katana         ffuf          dalfox
+sqlmap         ghauri        trufflehog
+gau            dnsx          interactsh
+burp-mcp       kali-mcp      gemini-cli
 ```
 
 ---
 
-## Research Principles
+## Research Notice
 
-`none` follows a strict operational model:
+This framework is intended for:
 
-```text
-Observe
-Adapt
-Validate
-Escalate
-Persist
-Learn
-```
+- Authorized Security Research
+- Red Team Operations
+- Bug Bounty Research
+- Defensive Validation
+- Adversary Emulation
 
-The framework does not optimize for scan volume.
-
-It optimizes for **high-confidence exploitability**.
-
----
-
-## Repository Structure
-
-```text
-.
-├── agents/
-│   └── none/
-│       ├── session.json
-│       ├── lessons/
-│       ├── findings/
-│       └── fullrecon/
-│
-├── prompts/
-├── configs/
-├── tools/
-└── docs/
-```
-
----
-
-## Security Research Notice
-
-This project is intended for:
-
-- Authorized security research
-- Adversary emulation
-- Defensive validation
-- Red team operations
-- Bug bounty research
-
-Operators are responsible for ensuring all activity complies with applicable law, organizational policy, and authorization boundaries.
+Operate within authorization boundaries.
 
 ---
 
 <div align="center">
 
-**Built for offensive research.**
+### **Built for offensive research**
 
-Signal-driven. Context-aware. Validation-first.
+*Signal-driven · Context-aware · Validation-first*
 
 </div>
