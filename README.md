@@ -320,13 +320,22 @@ go install github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 ### Start Session
 
 ```bash
-none start target.com
+gemini
+```
+
+```bash
+find {Bug-type} using curl, burp mcp and other tools hunt to this target.com  
+```
+
+Stop the operation and report the findings:
+```bash
+stop
 ```
 
 Resume previous operation:
 
 ```bash
-none resume
+resume
 ```
 
 ---
