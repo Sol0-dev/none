@@ -303,7 +303,7 @@ File persistence
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/none.git
+git clone https://github.com/Sol0-dev/none.git
 cd none
 ```
 
