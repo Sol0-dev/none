@@ -285,8 +285,8 @@ Final structure:
 
 ```text
 none/
+├── GEMINI.md
 └── .gemini/
-    ├── GEMINI.md
     └── settings.json
 ```
 
